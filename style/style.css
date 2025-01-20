@@ -13,9 +13,7 @@
 }
 
 /* shard style */
-body {
-  margin-bottom: 1000px;
-}
+
 /* header area */
 nav {
   padding: 20px 0;
@@ -97,6 +95,61 @@ nav .menu {
   margin-top: 20px;
 }
 
+/* main area */
+main {
+  margin: 0 90px;
+}
+/* curriculum */
+#curriculum {
+  background-image: url(/assets/bg.png);
+}
+#curriculum .title h1 {
+  font-family: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin: 50px 0 65px;
+}
+.cards {
+  display: flex;
+  gap: 30px;
+}
+.cards .card {
+  padding: 50px;
+  border-radius: 18px;
+  box-sizing: border-box;
+border: 0.94px solid rgb(255, 244, 220);
+border-radius: 18.86px;
+
+box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+background: linear-gradient(180.00deg, #FFF4DC,rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.cards .card .image1{
+  width: 120px;
+  margin: 0 auto;
+}
+.cards .card h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.cards .card h4,p,h6{
+  text-align: center;
+  padding: 10px 0;
+  line-height: 25px;
+}
+.cards .card {
+  .read1{
+    color: #64C8FF;
+    margin-top:30px
+  }
+  .read2{
+    color: #fea301;
+    margin-top:30px
+  }
+  .read3{
+    color: #5d58ef;
+    margin-top:30px
+  }
+}
 /* responsive with Mobile Device */
 @media screen and (max-width: 576px) {
   body {
@@ -119,7 +172,7 @@ nav .menu {
   .banner .image-area img {
     width: 100%;
   }
-  .banner .text-area{
+  .banner .text-area {
     margin-right: 0px;
   }
   .text-area h1 {
