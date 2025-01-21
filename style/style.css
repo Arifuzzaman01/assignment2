@@ -100,7 +100,10 @@ nav .menu {
 }
 
 /* main area */
-main {
+/* main {
+  margin: 0 90px;
+} */
+.container{
   margin: 0 90px;
 }
 /* curriculum */
@@ -174,16 +177,22 @@ main {
 
 /* Stories */
 #stories{
-  background-image: url(/assets/bg.png);
+  background-image: linear-gradient(0deg, rgba(254, 163, 1, 0.3),rgba(255, 209, 128, 0.3),rgba(255, 255, 255, 0.3)) , url(/assets/bg.png);
 }
 .card-stories{
   display: flex;
   gap: 30px;
+  padding-bottom: 50px;
+
 }
 .main-card{
   border-radius: 16px;
   width: 100%;
+  background-color: #fff;
 
+}
+.main-card p,h4{
+  padding: 0 40px 30px;
 }
 .main-card img{
   border-top-left-radius: 16px;
@@ -193,6 +202,7 @@ main {
 }
 .card-stories{
   width: 100%;
+  
 }
 .sub-card{
   display: grid;
@@ -202,8 +212,14 @@ main {
 }
 .card-stories .card1{
   width: 100%;
+  border-radius: 16px;
+  background-color: #fff;
   img{
     width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }h5{
+    padding: 20px;
   }
 }
 
@@ -216,6 +232,13 @@ main {
   position: relative;
   left: 30px;
   top: -20px;
+  
+}
+.story-color1, .story-color3, .story-color4{
+  background: #95B226;
+}
+.story-color2{
+  background: #5d58ef;
 }
 /* responsive with Mobile Device */
 @media screen and (max-width: 576px) {
@@ -254,8 +277,8 @@ main {
     display: flex;
     justify-content: center;
   }
-  main {
-    margin: 0px;
+  .container {
+    margin: 20px;
   }
   .cards {
     flex-direction: column;
@@ -268,5 +291,10 @@ main {
   }
   .main-card{
     display: none;
+  }
+  .btn-secondary{
+    padding: 7px 10px;
+    font-size: 10px;
+    left: 10px;
   }
 }
