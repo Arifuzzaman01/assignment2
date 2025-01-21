@@ -370,8 +370,28 @@ footer .icon {
   nav button{
     display: none;
   }
+  nav ul li a{
+    padding: 1rem;
+  }
+  .container{
+    margin: 0 50px;
+  }
+  .banner {
+    margin: 0 50px;
+    flex-direction: column-reverse;
+    p{
+      text-align: center;
+    }
+  }
+  .banner-btn{
+    text-align: center;
+  }
+   nav .menu{
+    display: inline;
+  }
   .banner h1{
     font-size: 2.5rem;
+    text-align: center;
   }
   .banner .image-area img{
     width: 370px;
