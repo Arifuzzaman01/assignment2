@@ -71,7 +71,6 @@ nav .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 .banner p {
   text-align: start;
@@ -94,7 +93,7 @@ nav .menu {
     color: #01acfd;
   }
 }
- .dark {
+.dark {
   background: #333;
   margin-top: 20px;
 }
@@ -103,7 +102,7 @@ nav .menu {
 /* main {
   margin: 0 90px;
 } */
-.container{
+.container {
   margin: 0 90px;
 }
 /* curriculum */
@@ -176,57 +175,60 @@ nav .menu {
 }
 
 /* Stories */
-#stories{
-  
-  background-image: linear-gradient(0deg, rgba(254, 163, 1, 0.3),rgba(255, 209, 128, 0.3),rgba(255, 255, 255, 0.3)) , url(/assets/bg.png);
+#stories {
+  background-image: linear-gradient(
+      0deg,
+      rgba(254, 163, 1, 0.3),
+      rgba(255, 209, 128, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(/assets/bg.png);
 }
 
-.card-stories{
+.card-stories {
   display: flex;
   gap: 30px;
   padding-bottom: 50px;
-
 }
-.main-card{
+.main-card {
   border-radius: 16px;
   width: 100%;
   background-color: #fff;
-
 }
-.main-card p,.main-card h4{
+.main-card p,
+.main-card h4 {
   padding: 0 40px 30px;
 }
-.main-card img{
+.main-card img {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   width: 100%;
-  
 }
-.card-stories{
+.card-stories {
   width: 100%;
-  
 }
-.sub-card{
+.sub-card {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   width: 100%;
 }
-.card-stories .card1{
+.card-stories .card1 {
   width: 100%;
   border-radius: 16px;
   background-color: #fff;
-  img{
+  img {
     width: 100%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-  }h5{
+  }
+  h5 {
     padding: 20px;
   }
 }
 
-.btn-secondary{
-  background: #3CD8E8;
+.btn-secondary {
+  background: #3cd8e8;
   padding: 10px 15px;
   color: #fff;
   border-radius: 48px;
@@ -234,63 +236,62 @@ nav .menu {
   position: relative;
   left: 30px;
   top: -20px;
-  
 }
-.story-color1, .story-color3, .story-color4{
-  background: #95B226;
+.story-color1,
+.story-color3,
+.story-color4 {
+  background: #95b226;
 }
-.story-color2{
+.story-color2 {
   background: #5d58ef;
 }
-.story-btn{
+.story-btn {
   text-align: center;
   padding-bottom: 50px;
 }
 /* footer */
-footer{
+footer {
   background: #01acfd;
   padding: 108px 129px;
-  display:flex;
+  display: flex;
   justify-content: space-around;
 }
-footer .footer-logo{
+footer .footer-logo {
   width: 50%;
 }
-.logo{
+.logo {
   display: flex;
-  h1{
+  h1 {
     color: #ffff;
     font-size: 40px;
     font-weight: 700;
     padding-left: 20px;
   }
-  
 }
-.footer-logo p{
+.footer-logo p {
   padding: 20px 0;
   color: #fff;
 }
-footer .list{
-  h4{
+footer .list {
+  h4 {
     color: #fff;
   }
-  ul{
+  ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
-  ul li{
+  ul li {
     list-style: none;
     padding: 10px 0;
     color: #fff;
   }
 }
 footer .icon {
-  h4{
+  h4 {
     color: #fff;
-
   }
-  img{
+  img {
     width: 30px;
     height: 30px;
     margin-top: 25px;
@@ -345,19 +346,67 @@ footer .icon {
   #curriculum .arrow-btn {
     display: none;
   }
-  .main-card{
+  .main-card {
     display: none;
   }
-  .btn-secondary{
+  .btn-secondary {
     padding: 7px 10px;
     font-size: 10px;
     left: 10px;
   }
-  footer{
+  footer {
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
   }
-  .footer-logo p{
-    width: 300px;
+  .footer-logo p {
+    width: 250px;
+    margin: 0;
+  }
+}
+
+/* Responsive for tablet device */
+@media screen and (min-width:576px) and (max-width: 992px) {
+  nav button{
+    display: none;
+  }
+  .banner h1{
+    font-size: 2.5rem;
+  }
+  .banner .image-area img{
+    width: 370px;
+  }
+  #stories{
+    width: 100vw;
+  }
+  .cards .card{
+    padding: 0;
+  }
+  .card-stories{
+    flex-direction: column;
+    .main-card img{
+      width: 100%;
+    }
+  }
+  footer{
+    flex-wrap: wrap;
+    .footer-logo{
+      width: 100%;
+      p{
+        text-align: justify;
+      }
+    }
+    .list ul{
+      display: grid;
+      grid-template-columns: repeat(2 ,1fr);
+      left: 100px;
+    }
+    .icon{
+      padding-left: 10px;
+      img{
+        margin-top: 40px;
+      }
+    }
+
   }
 }
